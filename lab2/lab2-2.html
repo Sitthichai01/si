@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <h1><div class="header">
+        <a href="lab2-1.html">Home</a> |
+        <a href="lab2-2.html">Canvas</a> |
+        <a href="lab2-3.html">Form</a> 
+    </div>
+</head>
+<style>
+    a{
+            text-decoration: none;
+        }
+     a:visited{
+        color:#5ebadf;
+    }
+    body{
+        text-align: center;
+        position: absolute;
+        top: 300px;
+        right: 150px;
+        left: 150px;
+    }
+</style>
+<body>
+    <canvas id="myCanvas" width="520" height="100" style="border:4px solid #67d6f171;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "50px Roboto Slab";
+        //Create gradient
+        var gradient = ctx.createLinearGradient(0, 0,c.width,0)
+        gradient.addColorStop("0", "#FEB9D0");
+        gradient.addColorStop("0.5", "#96CFCF");
+        gradient.addColorStop("1", "#C1B2C6");
+        //Fill Color
+        ctx.strokeStyle = gradient;
+        ctx.strokeText("Sitthichai Thongmak",10,60);
+
+    </script>
+</body>
+</html>

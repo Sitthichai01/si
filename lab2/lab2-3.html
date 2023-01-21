@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <h1><div class="header">
+        <a href="lab2-1.html">Home</a> |
+        <a href="lab2-2.html">Canvas</a> |
+        <a href="lab2-3.html">Form</a> 
+    </div>
+</head>
+</div>
+<style>
+    a{
+            text-decoration: none;
+        }
+     a:visited{
+        color:hsl(198, 20%, 83%);
+    }
+    body{
+        background-image: url(https://a-static.besthdwallpaper.com/couple-under-sunset-sky-wallpaper-2560x1600-81387_7.jpg);
+    }
+    body{
+        blckground-color: rgb(93, 162, 219);
+    }
+</style>
+<body>
+    <h2 align="center">Registration Details</h2>
+
+<form action="/action_page.php">
+  <input type="text" id="fname" name="fname" placeholder="Name"><br>
+
+  <input type="date" id="birthday" name="birthday"><br>
+
+  <input type="email" id="email" name="email" placeholder="Email"><br>
+
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="Select file"><br>
+
+  <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Address"></textarea>
+  <br><input type="submit" value="Register">
+</form>
